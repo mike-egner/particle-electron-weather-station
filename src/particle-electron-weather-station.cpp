@@ -1,3 +1,9 @@
+/******************************************************/
+//       THIS IS A GENERATED FILE - DO NOT EDIT       //
+/******************************************************/
+
+#include "application.h"
+#line 1 "d:/repos/particle-electron-weather-station/src/particle-electron-weather-station.ino"
 /*
  * Project particle-electron-weather-station
  * Description:
@@ -14,6 +20,23 @@
 #include <SparkFun_Photon_Weather_Shield_Library.h>
 
 //macros
+void setup();
+void loop();
+void getWeather();
+void printInfo();
+void updateBuffer(String json_buffer);
+void httpRequest(String json_buffer);
+void windHandler();
+void rainHandler();
+int getAnalog(String command);
+int changeSpeedSeconds(String speed_string);
+int changeHttpWait(String wait_string);
+void resetVariables();
+void updateBatteryStatus();
+float windSpeed(int sensor_clicks, float seconds_elapsed);
+void powerDown();
+void powerUp();
+#line 17 "d:/repos/particle-electron-weather-station/src/particle-electron-weather-station.ino"
 #define PI 3.1416
 #define SECS_IN_AN_HOUR 3600 //useful
 #define CM_IN_A_KM 100000
